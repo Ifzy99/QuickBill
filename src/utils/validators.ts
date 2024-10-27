@@ -1,4 +1,4 @@
-import { FormData, FormErrors } from '../types/transction';
+import { FormData, FormErrors } from '../types/transaction';
 
 export const validateForm = (data: FormData): FormErrors => {
   const errors: FormErrors = {};

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowUpDown } from 'lucide-react';
-import { Transaction } from '../types/transction';
+import { Transaction } from '../types/transaction';
 import { TransactionCard } from './TransactionCard';
 
 interface Props {

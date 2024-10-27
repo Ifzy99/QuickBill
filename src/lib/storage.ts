@@ -1,4 +1,4 @@
-import { Transaction } from '../types/transction';
+import { Transaction } from '../types/transaction';
 
 const STORAGE_KEY = 'quickbill_transactions';
 

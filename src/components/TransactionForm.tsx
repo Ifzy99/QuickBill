@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { PlusCircle, DollarSign } from 'lucide-react';
-import { FormData, FormErrors, Transaction } from '../types/transction';
+import { FormData, FormErrors, Transaction } from '../types/transaction';
 import { validateForm } from '../utils/validators';
 
 interface Props {

@@ -3,7 +3,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { TransactionType, TransactionCategory } from '../types/transction';
+import { TransactionType, TransactionCategory } from '../types/transaction';
 
 interface FilterOptions {
   type: TransactionType | 'all';

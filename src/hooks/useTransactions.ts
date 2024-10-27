@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Transaction } from '../types/transction';
+import { Transaction } from '../types/transaction';
 import { saveTransactions, loadTransactions } from '../lib/storage';
 
 export const useTransactions = () => {

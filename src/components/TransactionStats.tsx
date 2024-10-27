@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Transaction } from '../types/transction';
+import { Transaction } from '../types/transaction';
 import { formatCurrency } from '../utils/formatters';
 
 interface Props {

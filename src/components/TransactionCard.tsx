@@ -1,5 +1,5 @@
 import React from 'react';
-import { Transaction } from '../types/transction';
+import { Transaction } from '../types/transaction';
 import { formatCurrency, formatDate } from '../utils/formatters';
 
 interface Props {

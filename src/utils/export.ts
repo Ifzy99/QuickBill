@@ -1,4 +1,4 @@
-import { Transaction } from '../types/transction';
+import { Transaction } from '../types/transaction';
 import { formatDate, formatCurrency } from './formatters';
 
 export const exportToCSV = (transactions: Transaction[]): void => {
