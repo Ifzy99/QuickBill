@@ -7,6 +7,7 @@ import { TransactionList } from './TransactionList';
 import { TransactionFilters } from './TransactionFilters';
 import { TransactionStats } from './TransactionStats';
 import { exportToCSV } from '../utils/export';
+import {FilterOptions} from "../types/transaction"
 
 
 const FinanceLogger: React.FC = () => {

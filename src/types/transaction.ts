@@ -32,7 +32,7 @@ export interface FormData {
 }
 
 export interface FormErrors {
-    type?: string;
+    type?: TransactionType;
     category?: TransactionCategory;
     toFrom?: string;
     details?: string;
