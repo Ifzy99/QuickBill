@@ -15,7 +15,7 @@ interface Props {
 export const TransactionForm: React.FC<Props> = ({ onSubmit }) => {
   const [formData, setFormData] = useState<FormData>({
     type: 'invoice',
-    category:'other',
+    category:'Other',
     toFrom: '',
     details: '',
     amount: '',
@@ -43,7 +43,7 @@ export const TransactionForm: React.FC<Props> = ({ onSubmit }) => {
     };
 
     onSubmit(newTransaction);
-    setFormData({ type: 'invoice', category:'other', toFrom: '', details: '', amount: '', date:'' });
+    setFormData({ type: 'invoice', category:'Other', toFrom: '', details: '', amount: '', date:'' });
     setErrors({});
   };
 

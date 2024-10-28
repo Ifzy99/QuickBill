@@ -7,17 +7,21 @@ import { TransactionList } from './TransactionList';
 import { TransactionFilters } from './TransactionFilters';
 import { TransactionStats } from './TransactionStats';
 import { exportToCSV } from '../utils/export';
-import { Transaction } from '../types/transaction';
+
 
 const FinanceLogger: React.FC = () => {
   const { transactions, addTransaction } = useTransactions();
   const [filters, setFilters] = useState({
     type: 'all',
     category: 'all',
-    sortBy: 'date',
-    sortOrder: 'desc',
+    sortBy: '',
+    sortOrder: '',
     search: '',
   });
+
+  const handleFilterChange = (newFilters: FilterOptions) => {
+    setFilters(newFilters);
+};
 
   const filteredTransactions = transactions
     .filter(t => {
@@ -56,7 +60,7 @@ const FinanceLogger: React.FC = () => {
 
       <TransactionStats transactions={filteredTransactions} />
       <TransactionForm onSubmit={addTransaction} />
-      <TransactionFilters filters={filters} onFilterChange={setFilters} />
+      <TransactionFilters filters={filters} onFilterChange={handleFilterChange} />
       <TransactionList transactions={filteredTransactions} />
     </div>
   );
