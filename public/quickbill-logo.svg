@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+  <!-- Lightning Bolt -->
+  <path d="M70 10 L40 55 L60 55 L30 110 L90 50 L65 50 L85 10Z" 
+        fill="#FFD700" 
+        stroke="#1a365d" 
+        stroke-width="2"/>
+  
+  <!-- Dollar Sign -->
+  <path d="M120 35c0-8.28 6.72-15 15-15h20c8.28 0 15 6.72 15 15v0c0 8.28-6.72 15-15 15h-20c-8.28 0-15 6.72-15 15v0c0 8.28 6.72 15 15 15h20c8.28 0 15-6.72 15-15" 
+        fill="none" 
+        stroke="#1a365d" 
+        stroke-width="8" 
+        stroke-linecap="round"/>
+  <line x1="145" y1="15" x2="145" y2="90" 
+        stroke="#1a365d" 
+        stroke-width="8" 
+        stroke-linecap="round"/>
+  
+  <!-- Text -->
+  <text x="180" y="65" 
+        font-family="Arial, sans-serif" 
+        font-size="48" 
+        font-weight="bold" 
+        fill="#1a365d">
+    QuickBill
+  </text>
+</svg>

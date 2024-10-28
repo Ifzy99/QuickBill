@@ -10,7 +10,7 @@ export const Header: React.FC = () => {
     <header className="border-b bg-card">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
-          <img src="/logo.svg" alt="QuickBill" className="h-8 w-8" />
+          <img src="/quickbill-logo.svg" alt="QuickBill" className="h-8 w-8" />
           <h1 className="text-2xl font-bold">QuickBill</h1>
         </div>
         <div className="flex items-center space-x-4">
