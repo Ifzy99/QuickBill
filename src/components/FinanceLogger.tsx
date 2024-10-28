@@ -12,12 +12,12 @@ import {FilterOptions} from "../types/transaction"
 
 const FinanceLogger: React.FC = () => {
   const { transactions, addTransaction } = useTransactions();
-  const [filters, setFilters] = useState({
-    type: 'all',
-    category: 'all',
+  const [filters, setFilters] = useState<FilterOptions>({ 
+    type: 'all',       
+    category: 'all',    
     sortBy: '',
-    sortOrder: '',
-    search: '',
+    sortOrder: '',      
+    search: ''
   });
 
   const handleFilterChange = (newFilters: FilterOptions) => {

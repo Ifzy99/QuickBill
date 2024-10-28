@@ -48,13 +48,17 @@ export const TransactionFilters: React.FC<Props> = ({ filters, onFilterChange })
                 <SelectValue placeholder="Select category" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="all">All Categories</SelectItem>
-                <SelectItem value="salary">Salary</SelectItem>
-                <SelectItem value="rent">Rent</SelectItem>
-                <SelectItem value="utilities">Utilities</SelectItem>
-                <SelectItem value="supplies">Supplies</SelectItem>
-                <SelectItem value="services">Services</SelectItem>
-                <SelectItem value="other">Other</SelectItem>
+              <SelectItem value="all">All Categories</SelectItem>
+                <SelectItem value="Salary">Salary</SelectItem>
+                <SelectItem value="Freelance">Freelance</SelectItem>
+                <SelectItem value="Investment">Investment</SelectItem>
+                <SelectItem value="Rent">Rent</SelectItem>
+                <SelectItem value="Utilities">Utilities</SelectItem>
+                <SelectItem value="Groceries">Groceries</SelectItem>
+                <SelectItem value="Entertainment">Entertainment</SelectItem>
+                <SelectItem value="Transportation">Transportation</SelectItem>
+                <SelectItem value="Healthcare">Healthcare</SelectItem>
+                <SelectItem value="Other">Other</SelectItem>
               </SelectContent>
             </Select>
           </div>
