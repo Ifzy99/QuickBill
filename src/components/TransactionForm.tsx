@@ -15,9 +15,11 @@ interface Props {
 export const TransactionForm: React.FC<Props> = ({ onSubmit }) => {
   const [formData, setFormData] = useState<FormData>({
     type: 'invoice',
+    category:'other',
     toFrom: '',
     details: '',
     amount: '',
+    date:'',
   });
   const [errors, setErrors] = useState<FormErrors>({});
 
@@ -33,6 +35,7 @@ export const TransactionForm: React.FC<Props> = ({ onSubmit }) => {
     const newTransaction: Transaction = {
       id: Math.random().toString(36).substring(2, 9),
       type: formData.type,
+      category:formData.category,
       toFrom: formData.toFrom,
       details: formData.details,
       amount: parseFloat(formData.amount),
@@ -40,7 +43,7 @@ export const TransactionForm: React.FC<Props> = ({ onSubmit }) => {
     };
 
     onSubmit(newTransaction);
-    setFormData({ type: 'invoice', toFrom: '', details: '', amount: '' });
+    setFormData({ type: 'invoice', category:'other', toFrom: '', details: '', amount: '', date:'' });
     setErrors({});
   };
 

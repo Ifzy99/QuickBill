@@ -3,15 +3,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { TransactionType, TransactionCategory } from '../types/transaction';
+import { TransactionType, TransactionCategory, FilterOptions } from '../types/transaction';
 
-interface FilterOptions {
-  type: TransactionType | 'all';
-  category: TransactionCategory | 'all';
-  sortBy: 'date' | 'amount';
-  sortOrder: 'asc' | 'desc';
-  search: string;
-}
 
 interface Props {
   filters: FilterOptions;
@@ -19,6 +12,7 @@ interface Props {
 }
 
 export const TransactionFilters: React.FC<Props> = ({ filters, onFilterChange }) => {
+   
   return (
     <Card className="mb-6">
       <CardContent className="pt-6">
